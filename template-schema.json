@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "folders": {
+            "description": "Use para criar pastas extras, github não vai criar pastas vazias",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "resources": {
+            "description": "Você pode adicionar recursos adicionais para esse projeto",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "package": {
+            "description": "Use esse objeto para modificar algumas informações no package.json",
+            "type": "object",
+            "properties": {
+                "name": { "type": "integer" },
+
+                "description": { "type": "string" },
+
+                "scripts": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "minProperties": 1
+                },
+
+                "dependencies": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+
+                "devDependencies": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                }
+            }
+        }
+    }
+}
