@@ -5,7 +5,7 @@ Este repositório tem o intuito de hospedar os modelos e recursos utilizados pel
 Todos são bem-vindos para contribuir e compartilhar suas opiniões.
 
 <video width="600" controls muted>
-  <source src="./assets/demonstracao.mp4" type="video/mp4">
+  <source src="https://www.youtube.com/watch?v=3RJRx2JZ5vE&ab_channel=BuckyDeveloper" type="video/mp4">
   Seu navegador não suporta a exibição de vídeos.
 </video>
 
