@@ -2,6 +2,7 @@
     "$schema": "../../template-schema.json",
 
     "folders": ["./src"],
+    "resources": ["prisma", "fastify-server", "pm2", "docker-compose"],
     "package": {
         "scripts": {
             "start": "node .",
