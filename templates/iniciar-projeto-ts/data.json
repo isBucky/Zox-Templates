@@ -2,7 +2,6 @@
     "$schema": "../../template-schema.json",
 
     "folders": ["./src"],
-    "resources": ["prisma", "fastify-server"],
     "package": {
         "scripts": {
             "start": "node .",
