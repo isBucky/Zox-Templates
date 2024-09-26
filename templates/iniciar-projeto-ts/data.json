@@ -1,21 +1,33 @@
 {
     "$schema": "../../template-schema.json",
 
-    "folders": [
-        "./prisma",
-        "./prisma/migrations",
-        "./prisma/schemas",
-        "./src/structures/databases",
-        "./scripts"
-    ],
+    "folders": ["./src"],
+    "resources": ["prisma", "fastify-server"],
     "package": {
-        "dependencies": ["@prisma/client"],
-        "devDependencies": ["prisma"],
         "scripts": {
-            "prisma:migrate-dev": "pnpm prisma:build-dev && prisma migrate dev",
-            "prisma:migrate-prod": "pnpm prisma:build-prod && prisma migrate dev",
-            "prisma:build-dev": "sh ./scripts/prisma-build.sh mysql DATABASE_URL_DEV",
-            "prisma:build-prod": "sh ./scripts/prisma-build.sh mysql DATABASE_URL"
-        }
+            "start": "node .",
+            "start:watch": "node --watch .",
+            "dev": "tsx -r tsconfig-paths/register index.ts",
+            "dev:watch": "tsx watch -r tsconfig-paths/register index.ts",
+            "test": "tsx -r tsconfig-paths/register test.ts",
+            "build": "tsc && tsc-alias -p ./tsconfig.json",
+            "format": "prettier --write .",
+            "lint": "eslint ."
+        },
+        "dependencies": ["bucky.js"],
+        "devDependencies": [
+            "tsc-alias",
+            "tsconfig-paths",
+            "typescript",
+            "@types/node",
+            "eslint-plugin-prettier",
+            "eslint-plugin-security",
+            "eslint-plugin-promise",
+            "typescript-eslint",
+            "@eslint/js",
+            "globals",
+            "eslint",
+            "tsx"
+        ]
     }
 }
