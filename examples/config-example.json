@@ -1,0 +1,11 @@
+{
+    "$schema": "../resource-schema.json",
+    "folders": ["./src"],
+    "package": {
+        "dependencies": ["bucky.js", "object.mn"],
+        "devDependencies": ["typescript"],
+        "scripts": {
+            "start": "node ./dist/"
+        }
+    }
+}

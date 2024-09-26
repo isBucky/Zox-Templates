@@ -16,17 +16,10 @@
     // 	"description": "Log output to console"
     // }
 
-    "Data Template": {
+    "Config": {
         "scope": "json",
-        "description": "Um snippet para criar o data.json dos templates",
-        "prefix": ",template",
-        "body": ["{", "    \"$$schema\": \"../../template-schema.json\"", "}\n"]
-    },
-
-    "Data Resource": {
-        "scope": "json",
-        "description": "Um snippet para criar o data.json dos resources",
-        "prefix": ",resource",
-        "body": ["{", "    \"$$schema\": \"../../resource-schema.json\"", "}\n"]
+        "description": "Um snippet para criar o config-zox.json para os templates e resources",
+        "prefix": ",config",
+        "body": ["{", "    \"$$schema\": \"../../config-schema.json\"", "}\n"]
     }
 }

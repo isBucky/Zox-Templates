@@ -1,0 +1,14 @@
+{
+    "$schema": "../../config-schema.json",
+
+    "package": {
+        "dependencies": ["pm2"],
+        "scripts": {
+            "pm2": "pm2 start ./ecosystem.config.js",
+            "pm2:watch": "pm2 start ./ecosystem.config.js --watch",
+            "pm2:restart": "pm2 restart ./ecosystem.config.js",
+            "pm2:stop": "pm2 stop ./ecosystem.config.js",
+            "pm2:close": "pm2 delete ./ecosystem.config.js"
+        }
+    }
+}
