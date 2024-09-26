@@ -4,10 +4,11 @@ Este repositório tem o intuito de hospedar os modelos e recursos utilizados pel
 
 Todos são bem-vindos para contribuir e compartilhar suas opiniões.
 
-<video width="600" controls muted>
-  <source src="https://www.youtube.com/watch?v=3RJRx2JZ5vE&ab_channel=BuckyDeveloper" type="video/mp4">
-  Seu navegador não suporta a exibição de vídeos.
-</video>
+**Video exemplo de como é executado:**
+
+<a href="https://www.youtube.com/watch?v=3RJRx2JZ5vE&ab_channel=BuckyDeveloper">
+    <img src="https://img.youtube.com/vi/3RJRx2JZ5vE/maxresdefault.jpg" width="500" alt="Exemplo de Uso">></img>
+</a>
 
 ## Templates (Modelos)
 
