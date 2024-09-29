@@ -1,7 +1,7 @@
 {
     "$schema": "../../config-schema.json",
 
-    "folders": ["./src"],
+    "folders": ["./types", "./src/utils", "./src/structures", "./src/decorators"],
     "package": {
         "scripts": {
             "start": "node .",
@@ -13,7 +13,7 @@
             "format": "prettier --write .",
             "lint": "eslint ."
         },
-        "dependencies": ["bucky.js"],
+        "dependencies": ["bucky.js", "zod"],
         "devDependencies": [
             "tsc-alias",
             "tsconfig-paths",

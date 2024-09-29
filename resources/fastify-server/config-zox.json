@@ -2,11 +2,8 @@
     "$schema": "../../config-schema.json",
 
     "folders": [
-        "./src",
-        "./src/server",
-        "./src/server/middlewares",
-        "./src/server/routes",
-        "./src/server/services"
+        "./server/middlewares",
+        "./server/services"
     ],
     "package": {
         "dependencies": [

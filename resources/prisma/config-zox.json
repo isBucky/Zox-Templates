@@ -1,13 +1,7 @@
 {
     "$schema": "../../config-schema.json",
 
-    "folders": [
-        "./prisma",
-        "./prisma/migrations",
-        "./prisma/schemas",
-        "./src/structures/databases",
-        "./scripts"
-    ],
+    "folders": ["./prisma/migrations", "./prisma/schemas"],
     "package": {
         "dependencies": ["@prisma/client"],
         "devDependencies": ["prisma"],
