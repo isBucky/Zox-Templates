@@ -1,0 +1,14 @@
+{
+    "$schema": "../../config-schema.json",
+
+    "package": {
+        "dependencies": ["drizzle-orm", "drizzle-kit", "postgres"]
+    },
+    "env": {
+        "DATABASE_USER": null,
+        "DATABASE_PASSWORD": null,
+        "DATABASE_HOST": null,
+        "DATABASE_PORT": null,
+        "DATABASE_NAME": null
+    }
+}
