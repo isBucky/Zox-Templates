@@ -6,9 +6,8 @@
         "scripts": {
             "start": "node .",
             "start:watch": "node --watch .",
-            "dev": "tsx -r tsconfig-paths/register index.ts",
-            "dev:watch": "tsx watch -r tsconfig-paths/register index.ts",
-            "test": "tsx -r tsconfig-paths/register test.ts",
+            "dev": "tsx index.ts",
+            "dev:watch": "tsx watch index.ts",
             "build": "tsc && tsc-alias -p ./tsconfig.json",
             "format": "prettier --write .",
             "lint": "eslint ."
@@ -16,7 +15,6 @@
         "dependencies": ["bucky.js", "zod"],
         "devDependencies": [
             "tsc-alias",
-            "tsconfig-paths",
             "typescript",
             "@types/node",
             "eslint-plugin-prettier",
