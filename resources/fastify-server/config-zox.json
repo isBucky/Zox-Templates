@@ -7,7 +7,7 @@
     ],
     "package": {
         "dependencies": [
-            "@suptreze/shared/logger",
+            "@suptreze/shared",
             "@supercharge/request-ip",
             "fastify",
             "@fastify/rate-limit",

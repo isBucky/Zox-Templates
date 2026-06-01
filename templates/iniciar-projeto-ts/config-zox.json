@@ -15,7 +15,7 @@
         "dependencies": [
             "bucky.js",
             "zod",
-            "@suptreze/shared/functions",
+            "@suptreze/shared",
             "zod-error",
             "mustache"
         ],

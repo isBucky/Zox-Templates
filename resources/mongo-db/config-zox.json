@@ -5,6 +5,6 @@
         "./src/structures/repositories/nosql"
     ],
     "package": {
-        "dependencies": ["@suptreze/shared/logger", "mongoose", "zod"]
+        "dependencies": ["@suptreze/shared", "mongoose", "zod"]
     }
 }
