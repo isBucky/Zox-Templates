@@ -24,7 +24,6 @@
             "typescript",
             "@types/node",
             "eslint-plugin-prettier",
-            "eslint-plugin-security",
             "eslint-plugin-promise",
             "eslint-config-prettier",
             "typescript-eslint",

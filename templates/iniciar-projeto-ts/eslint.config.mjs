@@ -1,25 +1,27 @@
+// @ts-check
+
 import Prettier from 'eslint-plugin-prettier/recommended';
-import EsSecurity from 'eslint-plugin-security';
+import TypescriptEslint from 'typescript-eslint';
 import EsPromise from 'eslint-plugin-promise';
-import TsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 import pluginJs from '@eslint/js';
 import globals from 'globals';
 
-export default TsEslint.config(
-    ...TsEslint.configs.recommended,
+export default defineConfig([
+    TypescriptEslint.configs.recommended,
     pluginJs.configs.recommended,
     Prettier,
-    EsSecurity.configs.recommended,
 
     {
-        files: ['**/*.ts', '*.ts'],
+        files: ['**/*.ts'],
+        ignores: ['**/*.js'],
 
         plugins: {
             promise: EsPromise.configs.recommended,
         },
 
         languageOptions: {
-            globals: globals.browser,
+            globals: { ...globals.browser, ...globals.node },
             parserOptions: {
                 project: true,
             },
@@ -27,7 +29,6 @@ export default TsEslint.config(
 
         rules: {
             'prettier/prettier': 'warn',
-            'no-async-promise-executor': 'off',
 
             '@typescript-eslint/interface-name-prefix': 'off',
             '@typescript-eslint/explicit-function-return-type': 'off',
@@ -35,8 +36,12 @@ export default TsEslint.config(
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-async-promise-executor': 'off',
             '@typescript-eslint/no-unsafe-declaration-merging': 'off',
-            '@typescript-eslint/no-unused-vars': 'warn',
-            'no-unused-vars': 'warn',
+
+            '@typescript-eslint/no-unused-vars': 'off',
+            'no-unused-vars': 'off',
+
+            'prefer-const': 'warn',
+            'no-undef': 'off',
         },
     },
-);
+]);
