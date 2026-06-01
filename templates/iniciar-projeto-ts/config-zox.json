@@ -1,7 +1,7 @@
 {
     "$schema": "../../config-schema.json",
 
-    "folders": ["./types", "./src/utils", "./src/structures", "./src/decorators"],
+    "folders": ["./types", "./src/decorators"],
     "package": {
         "scripts": {
             "start": "node .",
