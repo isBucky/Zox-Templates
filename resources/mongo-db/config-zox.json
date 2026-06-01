@@ -1,0 +1,10 @@
+{
+    "$schema": "../../config-schema.json",
+
+    "folders": [
+        "./src/structures/repositories/nosql"
+    ],
+    "package": {
+        "dependencies": ["@suptreze/shared/logger", "mongoose", "zod"]
+    }
+}

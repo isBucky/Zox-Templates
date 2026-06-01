@@ -1,0 +1,84 @@
+{
+    "$schema": "../../json/schemas/errors.schema.json",
+    "data": {
+        "METHOD_NOT_ALLOWED": {
+            "status": 405,
+            "message": "The method is not allowed for the requested URL"
+        },
+
+        "OBJECT_EMPTY": {
+            "status": 400,
+            "message": "Object cannot be empty, at least one value must exist"
+        },
+
+        "INVALID_JSON": {
+            "status": 400,
+            "message": "The JSON provided is invalid, please check the structure and try again"
+        },
+
+        "MISSING_ARGUMENTS": {
+            "status": 400,
+            "message": "Some required arguments are missing, please check the request and try again"
+        },
+
+        "INVALID_RESPONSE": {
+            "status": 502,
+            "message": "The response obtained by the server is not as expected, please try again later"
+        },
+
+        "OPERATION_FAILED": {
+            "status": 500,
+            "message": "An error occurred while trying to perform the operation, please try again later"
+        },
+
+        "UNAUTHORIZED": {
+            "status": 401,
+            "message": "You are not authorized to access this resource"
+        },
+
+        "EXPIRED": {
+            "status": 400,
+            "message": "The time set for this operation has expired"
+        },
+
+        "BODY_EMPTY": {
+            "status": 400,
+            "message": "The body of the request cannot be empty"
+        },
+
+        "CONTENT-TYPE": {
+            "status": 415,
+            "message": "The Content-type is not supported or invalid"
+        },
+
+        "NOT_FOUND": {
+            "status": 404,
+            "message": "The requested resource was not found or is nonexistent"
+        },
+
+        "UNAVAILABLE": {
+            "status": 503,
+            "message": "The service is unavailable"
+        },
+
+        "RATE_LIMITED": {
+            "status": 429,
+            "message": "You have been blocked from accessing the site because you have exceeded the request limit"
+        },
+
+        "METHOD_RATE_LIMITED": {
+            "status": 429,
+            "message": "You have been blocked from accessing this method because you have exceeded the request limit"
+        },
+
+        "EMAIL_SERVICE_UNAVAILABLE": {
+            "status": 503,
+            "message": "The email service is unavailable at the moment"
+        },
+
+        "ALREADY_EXISTS": {
+            "status": 400,
+            "message": "This value already exists in the database"
+        }
+    }
+}

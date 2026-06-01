@@ -7,15 +7,16 @@
     ],
     "package": {
         "dependencies": [
-            "fastify",
+            "@suptreze/shared/logger",
             "@supercharge/request-ip",
+            "fastify",
             "@fastify/rate-limit",
-            "@fastify/multipart",
-            "@fastify/compress",
-            "@fastify/helmet",
-            "@fastify/middie",
+            "@fastify/formbody",
+            "fastify-raw-body",
             "@fastify/cookie",
+            "@fastify/helmet",
             "@fastify/cors",
+            "fastify-plugin",
             "kenai"
         ]
     }

@@ -12,7 +12,13 @@
             "format": "prettier --write .",
             "lint": "eslint ."
         },
-        "dependencies": ["bucky.js", "zod"],
+        "dependencies": [
+            "bucky.js",
+            "zod",
+            "@suptreze/shared/functions",
+            "zod-error",
+            "mustache"
+        ],
         "devDependencies": [
             "tsc-alias",
             "typescript",
